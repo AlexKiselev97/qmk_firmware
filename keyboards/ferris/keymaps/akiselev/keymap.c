@@ -17,7 +17,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   // Navigation layer
-  [1] = LAYOUT(
+  [NavLayer] = LAYOUT(
     KC_ESC,      KC_NO,         KC_NO,       KC_NO,         KC_NO,            KC_PGUP, KC_HOME,       KC_UP,       KC_END,         KC_NO,
     KC_LGUI,     KC_LALT,       KC_LCTL,     KC_LSFT,       KC_NO,            KC_PGDN, KC_LEFT,       KC_DOWN,     KC_RIGHT,       KC_NO,
     LSFT(KC_Z),  LSFT(KC_X),    LSFT(KC_C),  LSFT(KC_V),    KC_NO,            KC_NO,   LCTL(KC_LEFT), KC_CAPS,     LCTL(KC_RIGHT), KC_NO,
@@ -25,7 +25,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   // Symbol layer
-  [2] = LAYOUT(
+  [SymLayer] = LAYOUT(
     KC_GRV,      LSFT(KC_LBRC), KC_MINUS,    LSFT(KC_RBRC), KC_BSLS,          KC_NO,   LSFT(KC_7),    LSFT(KC_8),  LSFT(KC_9),     KC_NO,
     KC_NO,       KC_LBRC,       KC_EQL,      KC_RBRC,       KC_QUOT,          KC_NO,   LSFT(KC_4),    LSFT(KC_5),  LSFT(KC_6),     KC_NO,
     KC_NO,       LSFT(KC_9),    KC_UNDS,     LSFT(KC_0),    KC_NO,            KC_NO,   LSFT(KC_1),    LSFT(KC_2),  LSFT(KC_3),     KC_NO,
@@ -33,7 +33,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   // Num layer
-  [3] = LAYOUT(
+  [NumLayer] = LAYOUT(
     KC_NO,       KC_NO,         KC_NO,       KC_NO,         KC_NO,            KC_NO,   KC_7,          KC_8,        KC_9,           KC_NO,
     KC_NO,       KC_NO,         KC_NO,       KC_NO,         KC_NO,            KC_NO,   KC_4,          KC_5,        KC_6,           KC_0,
     KC_NO,       KC_NO,         KC_NO,       KC_NO,         KC_NO,            KC_NO,   KC_1,          KC_2,        KC_3,           KC_NO,
@@ -41,7 +41,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   // Multimedia and F layer
-  [4] = LAYOUT(
+  [MfLayer] = LAYOUT(
     KC_NO,       KC_F9,         KC_F8,       KC_F7,         KC_F12,           KC_NO,   KC_KB_VOLUME_DOWN, KC_MUTE,   KC_KB_VOLUME_UP, KC_NO,
     KC_NO,       KC_F6,         KC_F5,       KC_F4,         KC_F11,           KC_NO,   KC_LSFT,        KC_LCTL,      KC_LALT,         KC_LGUI,
     KC_NO,       KC_F3,         KC_F2,       KC_F1,         KC_F10,           KC_NO,   KC_MPRV,        KC_MPLY,      KC_MNXT,         KC_NO,
