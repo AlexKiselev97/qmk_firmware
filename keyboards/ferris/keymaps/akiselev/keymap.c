@@ -13,15 +13,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_Q,        KC_W,          KC_E,        KC_R,          KC_T,             KC_Y,   KC_U,           KC_I,        KC_O,           KC_P,
     GUI_T(KC_A), ALT_T(KC_S),   CTL_T(KC_D), SFT_T(KC_F),   KC_G,             KC_H,   SFT_T(KC_J),    CTL_T(KC_K), ALT_T(KC_L),    GUI_T(KC_SCLN),
     KC_Z,        KC_X,          KC_C,        KC_V,          KC_B,             KC_N,   KC_M,           KC_COMM,     KC_DOT,         KC_SLSH,
-                      LT(NumLayer, KC_SPC), LT(NavLayer, KC_TAB),             MO(SymLayer), MO(MfLayer)
+                              MO(NumLayer), LT(NavLayer, KC_SPC),             MO(SymLayer), MO(MfLayer)
   ),
 
   // Navigation layer
   [NavLayer] = LAYOUT(
     KC_ESC,      KC_NO,         KC_NO,       KC_NO,         KC_NO,            KC_PGUP, KC_HOME,       KC_UP,       KC_END,         KC_NO,
-    KC_LGUI,     KC_LALT,       KC_LCTL,     KC_LSFT,       KC_NO,            KC_PGDN, KC_LEFT,       KC_DOWN,     KC_RIGHT,       KC_NO,
+    KC_LGUI,     KC_LALT,       KC_LCTL,     KC_LSFT,      KC_TAB,            KC_PGDN, KC_LEFT,       KC_DOWN,     KC_RIGHT,       KC_NO,
     LSFT(KC_Z),  LSFT(KC_X),    LSFT(KC_C),  LSFT(KC_V),    KC_NO,            KC_NO,   LCTL(KC_LEFT), KC_CAPS,     LCTL(KC_RIGHT), KC_NO,
-                                             KC_NO,         KC_NO,            KC_ENT,   KC_BSPC
+                                             KC_NO,         KC_NO,            KC_ENT,  KC_BSPC
   ),
 
   // Symbol layer
