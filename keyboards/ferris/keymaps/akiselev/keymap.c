@@ -3,10 +3,10 @@
 
 #include QMK_KEYBOARD_H
 
-const int NavLayer = 1;
-const int SymLayer = 2;
-const int NumLayer = 3;
-const int MfLayer = 4;
+#define NavLayer 1
+#define SymLayer 2
+#define NumLayer 3
+#define MfLayer 4
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT(
@@ -20,7 +20,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [NavLayer] = LAYOUT(
     KC_ESC,      KC_NO,         KC_NO,       KC_NO,         KC_NO,            KC_PGUP, KC_HOME,       KC_UP,       KC_END,         KC_NO,
     KC_LGUI,     KC_LALT,       KC_LCTL,     KC_LSFT,      KC_TAB,            KC_PGDN, KC_LEFT,       KC_DOWN,     KC_RIGHT,       KC_NO,
-    LSFT(KC_Z),  LSFT(KC_X),    LSFT(KC_C),  LSFT(KC_V),    KC_NO,            KC_NO,   LCTL(KC_LEFT), KC_CAPS,     LCTL(KC_RIGHT), KC_NO,
+    LCTL(KC_Z),  LCTL(KC_X),    LCTL(KC_C),  LCTL(KC_V),    KC_NO,            KC_NO,   LCTL(KC_LEFT), KC_CAPS,     LCTL(KC_RIGHT), KC_NO,
                                              KC_NO,         KC_NO,            KC_ENT,  KC_BSPC
   ),
 
@@ -29,7 +29,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_GRV,      LSFT(KC_LBRC), KC_MINUS,    LSFT(KC_RBRC), KC_BSLS,          KC_NO,   LSFT(KC_7),    LSFT(KC_8),  LSFT(KC_9),     KC_NO,
     KC_NO,       KC_LBRC,       KC_EQL,      KC_RBRC,       KC_QUOT,          KC_NO,   LSFT(KC_4),    LSFT(KC_5),  LSFT(KC_6),     KC_NO,
     KC_NO,       LSFT(KC_9),    KC_UNDS,     LSFT(KC_0),    KC_NO,            KC_NO,   LSFT(KC_1),    LSFT(KC_2),  LSFT(KC_3),     KC_NO,
-                                             KC_NO,         KC_NO,            KC_NO,   KC_NO
+                                             KC_LCTL,       KC_LSFT,          KC_NO,   KC_NO
   ),
 
   // Num layer
